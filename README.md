@@ -16,3 +16,6 @@ the "Deliver" stage of your Pipeline.
 
 some more changes............
 
+bye
+Corrado.
+
