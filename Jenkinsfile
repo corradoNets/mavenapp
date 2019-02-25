@@ -16,6 +16,16 @@ pipeline
             {
                 sh 'mvn -B -DskipTests clean package'
             }
+           steps 
+           {
+            script 
+               {
+                openshift.withCluster() 
+                   {
+                    openshift.newBuild("--name=mapit", "--image-stream=redhat-openjdk18-openshift:1.1", "--binary")
+                    } 
+               }
+           }
         }       
     }
 }
