@@ -1,4 +1,3 @@
----
 config:
   node: "linux && prod"
 
